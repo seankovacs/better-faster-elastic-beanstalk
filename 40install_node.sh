@@ -9,7 +9,7 @@ function error_exit
 }
 
 #redirect all output to cfn-init to capture it by log.io
-# exec >>/var/log/cfn-init.log  2>&1
+exec >>/var/log/cfn-init.log  2>&1
 #download and extract desired node.js version
 echo "checking node..."
 OUT=$( [ ! -d "/opt/elasticbeanstalk/node-install" ] && echo "trying to install node.js $NODE_VER"   && mkdir /opt/elasticbeanstalk/node-install ; cd /opt/elasticbeanstalk/node-install/ && \
