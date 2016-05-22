@@ -22,7 +22,7 @@ echo $OUT
 #rm -f /opt/elasticbeanstalk/node-install/npm_updated
 
 # #download & make install desired nginx version
-echo "checking nginx2..."
+echo "checking nginx..."
 nginx -V
 
 # #remember to add desired modules to BOTH arch-dependent commands below:
